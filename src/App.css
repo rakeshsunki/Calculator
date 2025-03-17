@@ -1,0 +1,37 @@
+body{
+    margin:0;
+    background-color: rgba(133, 10, 57, 0.966);
+}
+.button{
+    display: flex;
+    flex-wrap: wrap;
+    width: 12rem;
+    height: 150px;
+}
+input{
+    margin: 0.8rem;
+    border-radius: 1rem;
+    padding: 10px;
+}
+.numberbtn{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: rgb(156, 226, 43);
+}
+.functionbtn{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: rgb(75, 12, 248);
+    color:white;
+    border-color: rgb(211, 17, 114);
+}
+.calculator{
+    background-color: black;
+    margin: 10% 42% 10% 42%;
+    border: 2px solid rgb(150, 238, 8);
+    border-radius: 1rem;
+    height: 20rem;
+    width:14rem;
+}
