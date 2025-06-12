@@ -1,28 +1,20 @@
-const Button = ({ a, handle }) => {
+import React from "react";
+
+const Button = ({ buttons, onButtonClick }) => {
   return (
-    <div className="button">
-      {a.map((item, index) =>
-        Number(item) ? (
-          <button
-            className="numberbtn"
-            key={index}
-            value={item}
-            onClick={(e) => handle(item, e)}
-          >
-            {item}
-          </button>
-        ) : (
-          <button
-            className="functionbtn"
-            key={index}
-            value={item}
-            onClick={(e) => handle(item, e)}
-          >
-            {item}
-          </button>
-        )
-      )}
+    <div className="button-grid">
+      {buttons.map((button, index) => (
+        <button
+          key={index}
+          className={`calculator-button ${button.type}-button`}
+          onClick={() => onButtonClick(button.value)}
+          aria-label={button.display}
+        >
+          {button.display}
+        </button>
+      ))}
     </div>
   );
 };
+
 export default Button;
