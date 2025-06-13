@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Button from "./Buttons";
-import Input from "./Input";
+import Input from "./input";
 
 function App() {
   // Organized buttons in a grid-like structure for better readability
@@ -60,7 +60,9 @@ function App() {
         break;
 
       case "dlt":
-        setDisplayValue((prev) => (prev.length === 1 ? "0" : prev.slice(0, -1)));
+        setDisplayValue((prev) =>
+          prev.length === 1 ? "0" : prev.slice(0, -1)
+        );
         break;
 
       default:
